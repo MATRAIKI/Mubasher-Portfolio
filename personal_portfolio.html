@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Cybersecurity & Networks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, #1e293b, #0ea5e9);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #f8fafc;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: #f1f5f9;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+    section {
+      padding: 25px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      border-bottom: 3px solid #0ea5e9;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: #f1f5f9;
+    }
+    p, ul {
+      margin-bottom: 8px;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    .project {
+      background: linear-gradient(135deg, #1e293b, #334155);
+      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <p>Cybersecurity & Networks | Projects & Skills</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Cybersecurity and Networks student with hands-on experience in ethical hacking, digital forensics, and secure system administration. I attended Hack Glasgow 2025, which exposed me to industry best practices and emerging technologies in cybersecurity.</p>
+    <p>I have practical knowledge in networking, cloud computing, and machine learning, including AWS cloud services and foundational machine learning concepts applied in cloud environments. My projects demonstrate my ability to implement this knowledge in real-world scenarios.</p>
+    <p>Through academic and independent projects, including setting up a Nintendo 3DS FTP server, building a vacancy listing website with Python, and performing vulnerability testing, I have developed tangible skills in web development, networking, and cybersecurity.</p>
+    <p>Alongside my technical abilities, I strive to continuously improve myself. I am critical-minded, attentive to detail, and motivated to achieve excellence in all tasks, both individually and in team settings.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Key Skills</h2>
+    <ul>
+      <li>Network configuration (Cisco CLI, VLANs, Routing Protocols)</li>
+      <li>Python & JavaScript for cybersecurity and data analysis</li>
+      <li>Penetration testing with Metasploit</li>
+      <li>Digital forensics (Autopsy, FTK Imager)</li>
+      <li>Linux administration (RHEL, CentOS)</li>
+      <li>Web development (HTML, CSS, JavaScript basics)</li>
+      <li>Practical experience with AWS cloud services, including foundational cloud concepts and resource management.</li>
+      <li>Implemented basic machine learning workflows, including creating functions and plotting graphs using cloud-based ML tools.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Nintendo 2DS Custom Firmware & FTP Server</h3>
+      <p>Configured a Nintendo 3DS with custom firmware, set up an FTP server, and connected using FileZilla to test server-client communication. This project deepened my knowledge of networking protocols and server setup.</p>
+    </div>
+    <div class="project">
+      <h3>Vacancy Listing Website</h3>
+      <p>Developed a website that integrated a government API to list the 10 most recent job vacancies dynamically. While the API was later retired, this project demonstrated practical API integration and web development skills.</p>
+      <p>Hosted the website locally using Python’s built-in HTTP server (<code>python3 -m http.server</code>) for testing and demonstration purposes.</p>
+    </div>
+    <div class="project">
+      <h3>University Coursework</h3>
+      <p>Created Python-based socket applications, implemented anomaly detection using Pandas and NumPy, performed forensic analysis with Autopsy, and carried out vulnerability testing using Metasploit.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mubasher Atraiki</p>
+  </footer>
+</body>
+</html>
