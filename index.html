@@ -1,142 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Cybersecurity & Networks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-    body {
-      background-color: #0f172a;
-      color: #f1f5f9;
-      line-height: 1.5;
-    }
-    header {
-      background: linear-gradient(135deg, #1e293b, #0ea5e9);
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      color: #f8fafc;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #cbd5e1;
-    }
-    nav {
-      margin-top: 20px;
-    }
-    nav a {
-      color: #f1f5f9;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #facc15;
-    }
-    section {
-      padding: 25px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 8px;
-      border-bottom: 3px solid #0ea5e9;
-      display: inline-block;
-      padding-bottom: 5px;
-      color: #f1f5f9;
-    }
-    p, ul {
-      margin-bottom: 8px;
-    }
-    ul li {
-      margin: 5px 0;
-    }
-    .project {
-      background: linear-gradient(135deg, #1e293b, #334155);
-      margin-bottom: 15px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .project:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    }
-    footer {
-      background: #1e293b;
-      color: #94a3b8;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubasher Atraiki - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header p.subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.8rem;
+        }
+
+        .section-subtext {
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-top: 0.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.4rem;
+            color: #e2e8f0;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.8rem;
+        }
+
+        .tag {
+            background-color: #0284c722;
+            color: var(--accent-color);
+            border: 1px solid #0284c744;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-group {
+            background-color: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-group h3 {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Portfolio</h1>
-    <p>Cybersecurity & Networks | Projects & Skills</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-    </nav>
-  </header>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Mubasher Atraiki</h1>
+            <p class="subtitle">BSc Cyber Security & Networks Student</p>
+            <div class="contact-info">
+                <span>📍 Glasgow, UK</span>
+                <span>📞 07438402528</span>
+                <span>✉️ <a href="mailto:m.atraiki10@gmail.com">m.atraiki10@gmail.com</a></span>
+                <span>🌐 <a href="https://matraiki.github.io/Mubasher-Portfolio/" target="_blank">matraiki.github.io/Mubasher-Portfolio/</a></span>
+            </div>
+        </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Cybersecurity and Networks student with hands-on experience in ethical hacking, digital forensics, cloud operations, secure system administration, and endpoint security. I attended Hack Glasgow 2025, which exposed me to industry best practices and emerging technologies in cybersecurity.</p>
-    <p>I have practical knowledge in networking, cloud computing, and machine learning, including AWS cloud services and foundational machine learning concepts applied in cloud environments. My projects demonstrate my ability to implement this knowledge in real-world scenarios.</p>
-    <p>Through academic and independent projects, including setting up a Nintendo 3DS FTP server, building a vacancy listing website with Python, and performing vulnerability testing, I have developed tangible skills in web development, networking, and cybersecurity.</p>
-    <p>Alongside my technical abilities, I strive to continuously improve myself. I am critical-minded, attentive to detail, and motivated to achieve excellence in all tasks, both individually and in team settings.</p>
-  </section>
+        <!-- Education Section -->
+        <section>
+            <h2>Education & Academic Modules</h2>
+            <div class="card">
+                <h3>Glasgow Caledonian University</h3>
+                <p class="date">BSc Cyber Security & Networks (Penultimate Year — Expected Graduation June 2027)</p>
+                <p class="section-subtext">Key Modules Studied (Years 2 – 4):</p>
+                <div class="tag-container">
+                    <span class="tag">Advanced Penetration Testing</span>
+                    <span class="tag">Advanced Campus Networking (STP, MSTP, OSPF, EIGRP)</span>
+                    <span class="tag">Internet Security (RADIUS, TACACS+)</span>
+                    <span class="tag">Secure Operations Analysis (Splunk, Snort, Nessus)</span>
+                    <span class="tag">Programming for Cybersecurity 2</span>
+                    <span class="tag">Cloud Operations (AWS)</span>
+                    <span class="tag">Digital Forensics (Autopsy, FTK Imager)</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>St. Roch's Secondary School</h3>
+                <p class="date">Glasgow, UK (2021 – 2023)</p>
+                <p>SQA Highers: Computer Science (Grade A), Spanish (Grade A), English (Grade A)</p>
+            </div>
+        </section>
 
-  <section id="skills">
-    <h2>Key Skills</h2>
-    <ul>
-      <li>Network configuration (Cisco CLI, VLANs, Routing Protocols)</li>
-      <li>Python & JavaScript for cybersecurity and data analysis</li>
-      <li>Penetration testing with Metasploit</li>
-      <li>Digital forensics (Autopsy, FTK Imager)</li>
-      <li>Linux administration (RHEL, CentOS)</li>
-      <li>Web development (HTML, CSS, JavaScript basics)</li>
-      <li>Endpoint security concepts (secure endpoint configuration, threat mitigation, access control principles)</li>
-      <li>Practical experience with AWS cloud services, including foundational cloud concepts and resource management.</li>
-      <li>Implemented basic machine learning workflows, including creating functions and plotting graphs using cloud-based ML tools.</li>
-    </ul>
-  </section>
+        <!-- Certifications Section -->
+        <section>
+            <h2>Certifications</h2>
+            <div class="skills-list">
+                <div class="skill-group">
+                    <h3>Cisco Certified Network Associate (CCNA)</h3>
+                    <p>Validation of skills in network access, IP connectivity, IP services, security fundamentals, and automation.</p>
+                </div>
+                <div class="skill-group">
+                    <h3>Fortinet Certified Associate (FCA)</h3>
+                    <p>Cybersecurity certification covering network security and threat management (2025).</p>
+                </div>
+                <div class="skill-group">
+                    <h3>Fortinet Certified Fundamentals (FCF)</h3>
+                    <p>Foundational certification in core cybersecurity principles and security fabric (2025).</p>
+                </div>
+            </div>
+        </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Nintendo 2DS Custom Firmware & FTP Server</h3>
-      <p>Configured a Nintendo 3DS with custom firmware, set up an FTP server, and connected using FileZilla to test server-client communication. This project deepened my knowledge of networking protocols and server setup.</p>
+        <!-- Technical Projects Section -->
+        <section>
+            <h2>Technical Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Video Calling Server</h3>
+                    <p class="date">2026 | Personal Project</p>
+                    <ul>
+                        <li>Developed a custom video calling server in Python using socket programming to transmit real-time video streams over a local network.</li>
+                        <li>The server handled network socket bindings, client connections, and data transfer handling for video calling sessions.</li>
+                    </ul>
+                    <div class="tag-container">
+                        <span class="tag">Python</span>
+                        <span class="tag">Socket Programming</span>
+                        <span class="tag">Networking</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Advanced Penetration Testing Project</h3>
+                    <p class="date">2026 | University Group Project</p>
+                    <ul>
+                        <li>Participated in a 6-person security assessment team, conducting vulnerability testing on target lab environments.</li>
+                        <li>Focused on hands-on practical exploitation, web security flaw discovery, and privilege escalation vectors.</li>
+                    </ul>
+                    <div class="tag-container">
+                        <span class="tag">Kali Linux</span>
+                        <span class="tag">Penetration Testing</span>
+                        <span class="tag">Web Exploitation</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Nintendo 3DS Custom Firmware & FTP Server</h3>
+            <p class="date">2025 | Personal Project</p>
+            <ul>
+                <li>Configured custom firmware on a Nintendo 3DS console for system parameter control.</li>
+                <li>Established an internal FTP server daemon and executed wireless file transfers using FileZilla.</li>
+            </ul>
+            <div class="tag-container">
+                <span class="tag">FTP Protocol</span>
+                <span class="tag">Networking</span>
+                <span class="tag">FileZilla</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Dynamic Job Vacancy Web Application</h3>
+            <p class="date">2024 | University Project</p>
+            <ul>
+                <li>Developed a dynamic frontend interface integrated with a government job vacancy REST API.</li>
+                <li>Deployed and hosted the application locally via Python's built-in HTTP server module for verification.</li>
+            </ul>
+            <div class="tag-container">
+                <span class="tag">JavaScript</span>
+                <span class="tag">REST API</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Python</span>
+            </div>
+        </div>
     </div>
-    <div class="project">
-      <h3>Vacancy Listing Website</h3>
-      <p>Developed a website that integrated a government API to list the 10 most recent job vacancies dynamically. While the API was later retired, this project demonstrated practical API integration and web development skills.</p>
-      <p>Hosted the website locally using Python’s built-in HTTP server (<code>python3 -m http.server</code>) for testing and demonstration purposes.</p>
-    </div>
-    <div class="project">
-      <h3>University Exams</h3>
-      <p>Created Python-based socket applications, implemented anomaly detection using Pandas and NumPy, performed forensic analysis with Autopsy, carried out vulnerability testing using Metasploit, and studied endpoint security principles including secure device configuration and protection mechanisms.</p>
-    </div>
-  </section>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Mubasher Atraiki</p>
-  </footer>
-</body>
-</html>
+<!-- Technical Skills Section -->
+<section>
+    <h2>Technical Skills Summary</h2>
+    <div class="skills-list">
+        <div class="skill-group">
+            <h3>Languages & Web</h3>
+            <p>Python, JavaScript, SQL, HTML/CSS, Bash/Shell</p>
+        </div>
+        <div class="skill-group">
+            <h3>Networking</h3>
+            <p>Cisco CLI, STP/MSTP, OSPF, EIGRP, TCP/IP, RADIUS, TACACS+</p>
+        </div>
+        <div class="skill-group">
+            <h3>Security & Tools</h3>
+            <p>Kali Linux, Splunk, Snort, Nessus, Wireshark, Autopsy, FTK Imager, Docker, Git/GitHub, AWS Cloud</p>
+        </div>
+    </div>
+</section>
